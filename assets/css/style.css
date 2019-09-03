@@ -1,0 +1,55 @@
+header  { 
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/starwarsbackground.jpg"); 
+    background-size: cover;
+    background-color: #F5F1ED ;
+    font-family: 'Playfair Display SC', serif;
+}
+
+h1 { 
+    margin-left: 60%;
+}
+
+.character { 
+    width: 200px;
+    height: 200px;
+    border: solid 2px green;
+    float: left;
+    margin-right: 1%;
+    background-color: lightblue;
+}
+
+img { 
+    width: 90%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 0 3% 0;
+}
+
+
+p { 
+   text-align: center;
+   padding: 0;
+   margin: 0;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+button { 
+    margin: 0;
+}
+
+h3 { 
+    margin: 0;
+}
