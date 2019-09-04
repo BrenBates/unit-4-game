@@ -37,14 +37,9 @@ var Sidious= {
     "Picture" : "assets/images/darthsidious.png"
 };
 
-//global variables
-
-
-
-
-//////////////////////////
-/// Main Game Process  ///
-//////////////////////////
+////////////////////
+//global variables//
+////////////////////
 
 var baseAtk = 0;    
 var yourCharacter;
@@ -59,6 +54,10 @@ var restartAvailable = false;
 Fighters = [Obi, Luke, Sidious, Maul];
 
 
+
+//////////////////////////
+/// Main Game Process  ///
+//////////////////////////
 
 
 //Build the character cards at the top of the screen for character selection.
