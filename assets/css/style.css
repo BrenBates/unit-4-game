@@ -18,9 +18,24 @@ h1 {
     height: 200px;
     border: solid 2px green;
     float: left;
-    margin-right: 1%;
+    margin: 1% 1% 1% 0;
     background-color: lightblue;
 }
+
+.playerCharacter { 
+    background-color: white;
+}
+
+.enemyList { 
+    background-color: red;
+}
+
+.defender { 
+    background-color: black;
+    color: white;
+}
+
+
 
 img { 
     width: 90%;
