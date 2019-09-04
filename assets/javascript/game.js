@@ -161,12 +161,7 @@ $(document).on("click","#attackButton", function () {
 
 $(document).on("click","#restartButton", function () {
     //Reset game
-    $('#msg').empty();
-    $('#defender').empty();
-    $('#playerCharacter').empty();
-    $('#enemyList').empty();
-    $('#restart').empty();
-    runGame();
+    location.reload();
     });
 
 
