@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <link href="style.css" rel="stylesheet" type="text/css">
-
     <title>Star Wars RPG</title>
-     <!--Meyer's CSS reset-->
-     <link href="assets/css/cssreset.css" type="text/css" rel="stylesheet">
+    <!--Meyer's CSS reset-->
+    <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
 
-      <!--Custom CSS stylesheet-->
+    <!--Custom CSS stylesheet-->
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
 
-     <!-- Media query meta tag for viewport responsiveness-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media query meta tag for viewport responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font 'Playfair Display SC', serif-->
-     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 
 
 </head>
+
 <body>
 
     <div class='clearfix'>
 
-    <header>
-        <h1>Star Wars RPG!</h1>
-    </header>
+        <header>
+            <h1>Star Wars RPG!</h1>
+        </header>
 
-    <div class = 'character' id ='obi'> 
-        <p>Obi-Wan Kenobi</p>
-        <img src="assets/images/obiwan.jpeg" alt="Obi Wan Kenobi">
-        <p id = 'obihp'>120</p>
-    </div>
-
-    <div class = 'character' id = 'luke'>
-        <p>Luke Skywalker</p>
-        <img src="assets/images/lukeskywalker.jpeg" alt="Luke Skywalker">
-        <p id='lukehp'>100</p>
-    </div>
-
-    <div class = 'character' id = 'sidious'>
-        <p>Darth Sidious</p>
-        <img src="assets/images/darthsidious.png" alt="Darth Sidious">
-        <p id='sidioushp'>150</p>
-    </div>
-  
-    <div class = 'character' id = 'maul'>
-        <p>Darth Maul</p>
-        <img src="assets/images/darthmaul.jpg" alt="Darth Maul">
-        <p id='maulhp'>180</p>
-    </div>
+        <div id='characterList'>
+        </div>
 
     </div>
 
 
-  
+    <div class='clearfix'>
+        <h3>Your Character</h3>
+        <div id='playerCharacter'></div>
+    </div>
 
-    <h3>Your Character</h3>
-
-    <h3>Enemies Available To Attack</h3>
+    <div class='clearfix'>
+        <h3>Enemies Available To Attack</h3>
+        <div id='enemyList'></div>
+    </div>
 
     <h3>Fight Section</h3>
+    <button id='attackButton'>Attack</button>
 
-    <button>Attack</button>
+    <div class='clearfix'>
+        <h3>Defender</h3>
+        <div id='defender'></div>
+    </div>
 
-    <h3>Defender</h3>
+    <div id='msg'>
+    </div>
 
+    <div id='restart'>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
 </body>
+
 </html>
