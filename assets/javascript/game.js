@@ -2,6 +2,9 @@
 //Create fighter objects //
 ///////////////////////////
 
+$(document).ready(function() {
+
+
 
 var Luke = {
     "Name" : "Luke Skywalker",
@@ -210,3 +213,4 @@ function removeCharacter(aFighter) {
         }
     }
 }
+});
