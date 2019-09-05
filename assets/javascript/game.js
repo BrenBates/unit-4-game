@@ -8,8 +8,8 @@ $(document).ready(function() {
 
 var Luke = {
     "Name" : "Luke Skywalker",
-    "atkPower" : 10,
-    "counterAtk" : 5, 
+    "atkPower" : 18,
+    "counterAtk" : 10, 
     "hitPoints" : 100,
     "Picture" : "assets/images/lukeskywalker.jpeg"
 };
@@ -17,7 +17,7 @@ var Luke = {
 
 var Obi= {
     "Name" : "Obi Wan Kenobi",
-    "atkPower" : 15,
+    "atkPower" : 12,
     "counterAtk" : 5, 
     "hitPoints" : 120,
     "Picture" : "assets/images/obiwan.jpeg"
@@ -26,16 +26,16 @@ var Obi= {
 
 var Maul= {
     "Name" : "Darth Maul",
-    "atkPower" : 20,
-    "counterAtk" : 15, 
+    "atkPower" : 3,
+    "counterAtk" : 17, 
     "hitPoints" : 180,
     "Picture" : "assets/images/darthmaul.jpg"
 };
 
 var Sidious= {
     "Name" : "Darth Sidious",
-    "atkPower" : 25,
-    "counterAtk" : 10, 
+    "atkPower" : 5,
+    "counterAtk" : 15, 
     "hitPoints" : 150,
     "Picture" : "assets/images/darthsidious.png"
 };
