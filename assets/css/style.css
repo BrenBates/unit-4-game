@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#attackButton, #restartButton { 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 h1 { 
     margin-left: 60%;
     font-size: 30px;
