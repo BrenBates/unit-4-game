@@ -5,8 +5,9 @@
 $(document).ready(function() {
 
 
+function initCharacters() { 
 
-var Luke = {
+    Luke = {
     "Name" : "Luke Skywalker",
     "atkPower" : 18,
     "counterAtk" : 10, 
@@ -15,7 +16,7 @@ var Luke = {
 };
 
 
-var Obi= {
+    Obi= {
     "Name" : "Obi Wan Kenobi",
     "atkPower" : 12,
     "counterAtk" : 5, 
@@ -24,7 +25,7 @@ var Obi= {
 };
 
 
-var Maul= {
+    Maul= {
     "Name" : "Darth Maul",
     "atkPower" : 3,
     "counterAtk" : 17, 
@@ -32,7 +33,7 @@ var Maul= {
     "Picture" : "assets/images/darthmaul.jpg"
 };
 
-var Sidious= {
+    Sidious= {
     "Name" : "Darth Sidious",
     "atkPower" : 5,
     "counterAtk" : 15, 
@@ -40,35 +41,49 @@ var Sidious= {
     "Picture" : "assets/images/darthsidious.png"
 };
 
+
+
+};
+
 ////////////////////
 //global variables//
 ////////////////////
+let Obi = {};
+let Luke = {};
+let Maul = {};
+let Sidious = {};
 
-var baseAtk = 0;    
-var yourCharacter;
-var defender;
-var fighterSelected = false;
-var defenderSelected = false;
-var gameOver = false;
-var restartAvailable = false;
+let baseAtk = 0;    
+let yourCharacter;
+let defender;
+let fighterSelected = false;
+let defenderSelected = false;
+let gameOver = false;
+let restartAvailable = false;
+
+
 
 
 //Put all the fighter objects into an array.
-Fighters = [Obi, Luke, Sidious, Maul];
-
-
 
 //////////////////////////
 /// Main Game Process  ///
 //////////////////////////
 
 
+
 //Build the character cards at the top of the screen for character selection.
+initCharacters();
+Fighters = [Obi, Luke, Sidious, Maul];
 
 fighterList('characterList');
 $('#msg').append('No enemy here');
 
+runGame();
+
 //If a fighter has yet to be selected, when the player clicks their character's image, move it to the Your Character section.  Then, remove that character from the Fighters array.
+
+function runGame() { 
 
 $(document).on("click","img", function () {
 
@@ -159,11 +174,12 @@ $(document).on("click","#attackButton", function () {
   
 });
 
+};
 
 
 $(document).on("click","#restartButton", function () {
     //Reset game
-    location.reload();
+    restartGame();
     });
 
 
@@ -213,4 +229,36 @@ function removeCharacter(aFighter) {
         }
     }
 }
+
+function restartGame() { 
+
+    //empty all divs
+    $('#msg').empty();
+    $('#playerCharacter').empty();
+    $('#defender').empty();
+    $('#enemyList').empty();
+    $('#characterList').empty();
+    $('#restart').empty();
+    
+    //reset all variables and player characters
+        baseAtk = 0;    
+        yourCharacter = { };
+        defender = { };
+        fighterSelected = false;
+        defenderSelected = false;
+        gameOver = false;
+        restartAvailable = false;
+    //reinitialize characters and build them into the characterList.
+    initCharacters();
+    Fighters = [Obi, Luke, Sidious, Maul];
+
+    //rebuild character list for player to choose from, populate that there's no enemy present.
+    fighterList('characterList');
+    $('#msg').append('No enemy here');
+    
+    
+    };
+
+
 });
+
